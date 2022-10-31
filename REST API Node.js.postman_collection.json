@@ -1,0 +1,152 @@
+{
+	"info": {
+		"_postman_id": "7ddad995-358a-4819-9975-781317228cf1",
+		"name": "REST API Node.js",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2252387"
+	},
+	"item": [
+		{
+			"name": "Get all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/v1/workouts",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"workouts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Core Buster\",\r\n  \"mode\": \"AMRAP 20\",\r\n  \"equipment\": [\r\n    \"rack\",\r\n    \"barbell\",\r\n    \"abmat\"\r\n  ],\r\n  \"exercises\": [\r\n    \"15 toes to bars\",\r\n    \"10 thrusters\",\r\n    \"30 abmat sit-ups\"\r\n  ],\r\n  \"trainerTips\": [\r\n    \"Split your toes to bars into two sets maximum\",\r\n    \"Go unbroken on the thrusters\",\r\n    \"Take the abmat sit-ups as a chance to normalize your breath\"\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/v1/workouts/61dbae02-c147-4e28-863c-db7bd402b2d6",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"workouts",
+						"61dbae02-c147-4e28-863c-db7bd402b2d6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Core Buster\",\r\n  \"mode\": \"AMRAP 20\",\r\n  \"equipment\": [\r\n    \"rack\",\r\n    \"barbell\",\r\n    \"abmat\"\r\n  ],\r\n  \"exercises\": [\r\n    \"15 toes to bars\",\r\n    \"10 thrusters\",\r\n    \"30 abmat sit-ups\"\r\n  ],\r\n  \"trainerTips\": [\r\n    \"Split your toes to bars into two sets maximum\",\r\n    \"Go unbroken on the thrusters\",\r\n    \"Take the abmat sit-ups as a chance to normalize your breath\"\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/v1/workouts",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"workouts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Patch",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Tommy VI\",\r\n    \"mode\": \"For Time\",\r\n    \"equipment\": [\r\n        \"barbell\",\r\n        \"rope\"\r\n    ],\r\n    \"exercises\": [\r\n        \"21 thrusters\",\r\n        \"12 rope climbs, 15 ft\",\r\n        \"15 thrusters\",\r\n        \"9 rope climbs, 15 ft\",\r\n        \"9 thrusters\",\r\n        \"6 rope climbs, 15 ft\"\r\n    ],\r\n    \"createdAt\": \"4/20/2022, 2:21:56 PM\",\r\n    \"updatedAt\": \"4/20/2022, 2:21:56 PM\",\r\n    \"trainerTips\": [\r\n        \"Split the 21 thrusters as needed\",\r\n        \"Try to do the 9 and 6 thrusters unbroken\",\r\n        \"RX Weights: 115lb/75lb\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/v1/workouts/61dbae02-c147-4e28-863c-db7bd402b2d6",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"workouts",
+						"61dbae02-c147-4e28-863c-db7bd402b2d6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Core Buster\",\r\n  \"mode\": \"AMRAP 20\",\r\n  \"equipment\": [\r\n    \"rack\",\r\n    \"barbell\",\r\n    \"abmat\"\r\n  ],\r\n  \"exercises\": [\r\n    \"15 toes to bars\",\r\n    \"10 thrusters\",\r\n    \"30 abmat sit-ups\"\r\n  ],\r\n  \"trainerTips\": [\r\n    \"Split your toes to bars into two sets maximum\",\r\n    \"Go unbroken on the thrusters\",\r\n    \"Take the abmat sit-ups as a chance to normalize your breath\"\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/v1/workouts/4a3d9aaa-608c-49a7-a004-66305ad4ab50",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"workouts",
+						"4a3d9aaa-608c-49a7-a004-66305ad4ab50"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

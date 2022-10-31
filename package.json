@@ -1,0 +1,19 @@
+{
+  "name": "docker_web_app",
+  "version": "1.0.0",
+  "description": "REST API built with Node.js and Express on Docker",
+  "author": "Alex Tincu <alex.tincu.dev@gmail.com>",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon --inspect=0.0.0.0 src/index.js",
+    "start:prod": "node src/index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "express": "^4.16.1",
+    "uuid": "^9.0.0"
+  }
+}
